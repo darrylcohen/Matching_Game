@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet"  href="css.css" >
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Raleway" rel="stylesheet"> 
+	<title>Memory Matching Game</title>
+</head>
+
+<body>
+
+<div class="bigContainer" id="bigContainer">
+	<div class="heading" >
+		<div class="subH">SELECT 2 TILES THAT MATCH
+		</div>
+		<div class="buttonC">
+			<button value="4" onclick="setGrid(4)">Easy</button>
+			<button value="6" onclick="setGrid(9)">Hard</button>
+		</div>
+		<div class="scoreH">
+			<div>Score</div>
+			<div class="score" id="score" >0</div>
+		</div>
+	</div>
+	<div class="container" id = "container"></div>
+	<footer >
+		Darryl Cohen 2017 &#169
+	</footer>
+</div>
+
+<script src="js.js"></script>
+
+</body>
+
+</html>
