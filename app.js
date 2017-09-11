@@ -6,17 +6,13 @@ var pictures = ["baby", "bird", "boat", "butterfly", "cat", "chair", "dog", "fam
 var numClicks = 0;
 
 setGrid(4);
+
+//Create the array of numbers so there is 2 of each number
+// Shuffle the array and call function to place the arrays
 function setGrid(x) {
 	numClicks = 0;
 	document.getElementById("score").innerText = 0;
-	// document.getElementById("message").innerHTML="";
-	// document.getElementById("message").style.visibility="hidden";
-	if(x==4) {
-		document.getElementById("bigContainer").style.width="60%";
-	} else {
-		document.getElementById("bigContainer").style.width="60%";
-	}
-
+	document.getElementById("bigContainer").style.width="60%";
 
 	var size = x;
 	endOfGame = size *2;
@@ -31,17 +27,21 @@ function setGrid(x) {
 	arr = shuffle(arr);
 	placeTiles (arr, size);
 }
+
+//Shuffles the array
 function shuffle (array) {
 	var i = 0, j = 0, temp = null
 
 	for (i = array.length - 1; i > 0; i -= 1) {
-  		j = Math.floor(Math.random() * (i + 1))
-  		temp = array[i]
-	  	array[i] = array[j]
-  		array[j] = temp
-  	}
+		j = Math.floor(Math.random() * (i + 1))
+		temp = array[i]
+  	array[i] = array[j]
+		array[j] = temp
+	}
 	return array;
 }
+
+//create the board
 function placeTiles(tiles, size) {
 	var h;
 	var w;
