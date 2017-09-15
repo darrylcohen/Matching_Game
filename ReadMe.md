@@ -12,7 +12,7 @@ my 6 year old daughter. I had learnt a little about javascript at uni before I w
 My Solution
 It took a long time. I understood the concept of what I wanted to achieve and worked through the logic step by step. Thank you to W3Schools which was a life saviour in terms of how to do something
 
-[Play the MAtching Memory Game](https://darrylcohen.github.io/Matching_Game/)
+[Play the Matching Memory Game](https://darrylcohen.github.io/Matching_Game/)
 
 [Please visit my web site](https://www.darrylcohen.com.au)
 
